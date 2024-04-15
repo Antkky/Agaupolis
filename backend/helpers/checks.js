@@ -1,7 +1,13 @@
 import UserModel from "../models/user.js";
 import { comparePassword } from "./encrypt.js";
 
-export async function registerChecks(firstName, lastName, email, password) {
+export async function registerChecks(
+    firstName,
+    lastName,
+    email,
+    password,
+    res
+) {
     //check first name
     if (!firstName)
         return res.json({
@@ -34,7 +40,7 @@ export async function registerChecks(firstName, lastName, email, password) {
         });
 }
 
-export async function loginChecks(user, password) {
+export async function loginChecks(user, password, res) {
     // check if user is valid
     if (!user)
         return res.json({

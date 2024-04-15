@@ -3,32 +3,37 @@ import Login from "../styles/login.module.scss";
 import key from "../assets/Key.png";
 import Input1 from "../components/Input1";
 import { useState } from "react";
+import axios from "axios";
 
 export default function LoginPage() {
-    const [username, setUsername] = useState("");
-    const [password, setPassword] = useState("");
-
-    async function loginUser(event) {
-        event.preventDefault();
-
-        const response = await fetch("http://localhost:8000/api/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                username,
+    // gets input data and assigns to "data" object
+    const [data, setData] = useState({
+        email: "",
+        password: "",
+    });
+    // login function
+    async function loginUser(e) {
+        // prevents page from reloading
+        e.preventDefault();
+        // assigns input to data variable
+        const { email, password } = data;
+        try {
+            // post request and assign response to data object
+            const { data } = await axios.post("/api/login", {
+                email,
                 password,
-            }),
-        });
-
-        const data = await response.json();
-
-        if (data.user) {
-            localStorage.setItem("token", data.user);
-            window.location.href = "/ClientPortal";
-        } else {
-            alert("invalid login");
+            });
+            // check for errors
+            if (data.error) {
+                console.error(data.error);
+            }
+            if (data.status == "Logged In") {
+                console.log(data.token);
+                localStorage.setItem("token", data.token);
+                alert("logged in");
+            }
+        } catch (error) {
+            console.error(error);
         }
     }
 
@@ -50,10 +55,15 @@ export default function LoginPage() {
                         {/* Username Input */}
                         <div className={Login.Input}>
                             <Input1
-                                name="Username"
+                                name="Email"
                                 type="text"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}
+                                value={data.email}
+                                onChange={(e) =>
+                                    setData({
+                                        ...data,
+                                        email: e.target.value,
+                                    })
+                                }
                             />
                         </div>
                         {/* Password Input */}
@@ -61,8 +71,13 @@ export default function LoginPage() {
                             <Input1
                                 name="Password"
                                 type="password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
+                                value={data.password}
+                                onChange={(e) =>
+                                    setData({
+                                        ...data,
+                                        password: e.target.value,
+                                    })
+                                }
                             />
                         </div>
                         {/* Submit Button */}

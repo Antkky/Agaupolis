@@ -3,7 +3,8 @@ import "dotenv/config";
 
 export function authJWT(user) {
     // create a token and sign it to a variable
-    const token = jwt.sign(user.toJSON(), process.env.JWTsecret);
+    const userJSON = JSON.stringify(user);
+    const token = jwt.sign(userJSON, process.env.JWTsecret);
 
     // returns generated token
     return token;

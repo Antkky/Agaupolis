@@ -1,5 +1,6 @@
 import UserModel from "../models/user.js";
-import { loginChecks, registerChecks } from "../helpers/checks.js";
+import { registerChecks } from "../helpers/checks.js";
+import { comparePassword } from "../helpers/encrypt.js";
 import { EncryptPWD } from "../helpers/encrypt.js";
 import { authJWT, decodeJWT } from "../helpers/auth.js";
 
@@ -47,11 +48,23 @@ export async function loginUser(req, res) {
         // find account
         const user = await UserModel.findOne({ email });
 
-        // checks input and verifies password
-        await loginChecks(user, password);
+        // check if user is valid
+        if (!user)
+            return res.json({
+                error: "invalid user",
+            });
+
+        // match inputted password with encrypted password
+        const match = await comparePassword(password, user.password);
+        if (!match)
+            return res.json({
+                error: "invalid password",
+            });
 
         // generate JWT token
         const token = authJWT(user);
+
+        console.log(token);
 
         // return status
         return res.json({

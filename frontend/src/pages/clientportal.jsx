@@ -1,7 +1,3 @@
-export default function ClientPortal() {
-    return (
-        <>
-            <h1>Logged in</h1>
-        </>
-    );
+export default function clientportal() {
+    return <div></div>;
 }
