@@ -1,0 +1,16 @@
+.Wrapper{
+    transition: transform .25s;
+    opacity: .7;
+    cursor: pointer;
+    .Button{
+        color: black;
+        border: 0px;
+        background-color: transparent;
+        outline: transparent;
+        font-size: 2vw;
+        cursor: pointer;
+    }
+}
+.Wrapper:hover{
+    transform: translateY(5px);
+}

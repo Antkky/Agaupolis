@@ -1,0 +1,52 @@
+Date : 2024-04-13 18:44:38
+Directory : c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis
+Total : 15 files,  242 codes, 13 comments, 23 blanks, all 278 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| SCSS           |          6 |        120 |          3 |          5 |        128 |
+| TypeScript JSX |          7 |        113 |         10 |         16 |        139 |
+| XML            |          1 |          9 |          0 |          1 |         10 |
+| JavaScript     |          1 |          0 |          0 |          1 |          1 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         15 |        242 |         13 |         23 |        278 |
+| backend                                                                                                       |          1 |          0 |          0 |          1 |          1 |
+| frontend                                                                                                      |         14 |        242 |         13 |         22 |        277 |
+| frontend\src                                                                                                  |         14 |        242 |         13 |         22 |        277 |
+| frontend\src (Files)                                                                                          |          1 |         13 |          0 |          2 |         15 |
+| frontend\src\assets                                                                                           |          1 |          9 |          0 |          1 |         10 |
+| frontend\src\components                                                                                       |          8 |        100 |          0 |          7 |        107 |
+| frontend\src\components (Files)                                                                               |          4 |         53 |          0 |          5 |         58 |
+| frontend\src\components\styles                                                                                |          4 |         47 |          0 |          2 |         49 |
+| frontend\src\pages                                                                                            |          2 |         47 |         10 |          9 |         66 |
+| frontend\src\styles                                                                                           |          2 |         73 |          3 |          3 |         79 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                      | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\server.js                                          | JavaScript     |          0 |          0 |          1 |          1 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\App.tsx                                       | TypeScript JSX |         13 |          0 |          2 |         15 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\Moon Phase.svg                         | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\blurred-spheres.tsx                | TypeScript JSX |          6 |          0 |          1 |          7 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\button1.tsx                        | TypeScript JSX |          8 |          0 |          1 |          9 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\button2.tsx                        | TypeScript JSX |          8 |          0 |          1 |          9 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\dark-mode-switch.tsx               | TypeScript JSX |         31 |          0 |          2 |         33 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\blurred-spheres.module.scss | SCSS           |          7 |          0 |          0 |          7 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\button1.module.scss         | SCSS           |         24 |          0 |          1 |         25 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\button2.module.scss         | SCSS           |         16 |          0 |          0 |         16 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\dark-mode-switch.scss       | SCSS           |          0 |          0 |          1 |          1 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\landingPage.tsx                         | TypeScript JSX |         41 |         10 |          9 |         60 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\login.tsx                               | TypeScript JSX |          6 |          0 |          0 |          6 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\LandingPage.module.scss                | SCSS           |         63 |          3 |          2 |         68 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\index.scss                             | SCSS           |         10 |          0 |          1 |         11 |
+| Total                                                                                                         |                |        242 |         13 |         23 |        278 |
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

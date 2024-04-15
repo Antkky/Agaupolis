@@ -1,0 +1,17 @@
+"filename", "language", "TypeScript JSX", "JavaScript", "XML", "SCSS", "comment", "blank", "total"
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\server.js", "JavaScript", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\App.tsx", "TypeScript JSX", 13, 0, 0, 0, 0, 2, 15
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\Moon Phase.svg", "XML", 0, 0, 9, 0, 0, 1, 10
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\blurred-spheres.tsx", "TypeScript JSX", 6, 0, 0, 0, 0, 1, 7
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\button1.tsx", "TypeScript JSX", 8, 0, 0, 0, 0, 1, 9
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\button2.tsx", "TypeScript JSX", 8, 0, 0, 0, 0, 1, 9
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\dark-mode-switch.tsx", "TypeScript JSX", 31, 0, 0, 0, 0, 2, 33
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\blurred-spheres.module.scss", "SCSS", 0, 0, 0, 7, 0, 0, 7
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\button1.module.scss", "SCSS", 0, 0, 0, 24, 0, 1, 25
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\button2.module.scss", "SCSS", 0, 0, 0, 16, 0, 0, 16
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\dark-mode-switch.scss", "SCSS", 0, 0, 0, 0, 0, 1, 1
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\landingPage.tsx", "TypeScript JSX", 41, 0, 0, 0, 10, 9, 60
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\login.tsx", "TypeScript JSX", 6, 0, 0, 0, 0, 0, 6
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\LandingPage.module.scss", "SCSS", 0, 0, 0, 63, 3, 2, 68
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\index.scss", "SCSS", 0, 0, 0, 10, 0, 1, 11
+"Total", "-", 113, 0, 9, 120, 13, 23, 278
