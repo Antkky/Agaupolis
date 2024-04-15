@@ -4,6 +4,9 @@
         "**/.gitignore": true,
         "**/.gitattributes": true,
         "**/.svn": true,
+
+        "**/.env": true,
+
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
@@ -21,8 +24,8 @@
 
         "**/package.json": true,
 
-        "**/node_modules": true
+        "**/node_modules": true,
 
-        ".VSCodeCounter": true,
+        ".VSCodeCounter": true
     }
 }
