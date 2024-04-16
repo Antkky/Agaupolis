@@ -1,0 +1,42 @@
+@mixin outline {
+    border: 1px red solid;
+}
+
+.Content {
+    min-width: 80%;
+    padding-top: 8vh;
+}
+
+.Welcome {
+    @include outline;
+    left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+    .WelcomeText {
+        display: flex;
+        h1 {
+            margin: 0px 8px;
+            opacity: 0.6;
+        }
+        .name {
+            color: #8339e8;
+            opacity: 1;
+        }
+    }
+    .missed {
+        margin: 0px;
+        font-size: 2.25rem;
+        opacity: 0.65;
+    }
+}
+
+.Stats {
+    @include outline;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 5vw;
+    flex-wrap: wrap;
+}

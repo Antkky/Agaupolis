@@ -62,9 +62,12 @@ export async function loginUser(req, res) {
             });
 
         // generate JWT token
-        const token = authJWT(user);
-
-        console.log(token);
+        const token = authJWT(
+            user._id,
+            user.firstName,
+            user.lastName,
+            user.email
+        );
 
         // return status
         return res.json({
@@ -81,13 +84,13 @@ export async function loginUser(req, res) {
 export async function userData(req, res) {
     try {
         // get JWT token from request header
-        const token = req.headers["x-access-token"];
+        const token = req.headers["token"];
 
         // decode JWT token
         const decoded = decodeJWT(token);
 
         // find user by ID
-        const user = await UserModel.findById(decoded._id);
+        const user = await UserModel.findById(decoded.id);
 
         // checks if user exists
         if (!user) {
@@ -97,7 +100,7 @@ export async function userData(req, res) {
         }
 
         // returns user data
-        return res.json(user);
+        return res.json(decoded);
 
         //
     } catch (error) {

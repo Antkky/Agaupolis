@@ -1,0 +1,83 @@
+Date : 2024-04-16 02:01:07
+Directory : c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript
+Total : 39 files,  918 codes, 72 comments, 130 blanks, all 1120 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| SCSS           |         13 |        392 |          3 |         38 |        433 |
+| JavaScript JSX |         13 |        283 |         26 |         35 |        344 |
+| JavaScript     |          8 |        199 |         43 |         53 |        295 |
+| XML            |          5 |         44 |          0 |          4 |         48 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                               | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                  |         39 |        918 |         72 |        130 |      1,120 |
+| backend                                                                                                            |          7 |        194 |         42 |         51 |        287 |
+| backend (Files)                                                                                                    |          1 |         20 |          5 |          6 |         31 |
+| backend\controllers                                                                                                |          1 |         73 |         21 |         19 |        113 |
+| backend\helpers                                                                                                    |          3 |         74 |         10 |         15 |         99 |
+| backend\models                                                                                                     |          1 |         12 |          0 |          4 |         16 |
+| backend\routes                                                                                                     |          1 |         15 |          6 |          7 |         28 |
+| frontend                                                                                                           |         32 |        724 |         30 |         79 |        833 |
+| frontend (Files)                                                                                                   |          1 |          5 |          1 |          2 |          8 |
+| frontend\public                                                                                                    |          1 |          1 |          0 |          0 |          1 |
+| frontend\src                                                                                                       |         30 |        718 |         29 |         77 |        824 |
+| frontend\src (Files)                                                                                               |          2 |         27 |          0 |          6 |         33 |
+| frontend\src\assets                                                                                                |          4 |         43 |          0 |          4 |         47 |
+| frontend\src\components                                                                                            |         15 |        255 |          0 |         25 |        280 |
+| frontend\src\components (Files)                                                                                    |          7 |         87 |          0 |         13 |        100 |
+| frontend\src\components\styles                                                                                     |          8 |        168 |          0 |         12 |        180 |
+| frontend\src\pages                                                                                                 |          4 |        169 |         26 |         16 |        211 |
+| frontend\src\styles                                                                                                |          5 |        224 |          3 |         26 |        253 |
++--------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                           | language       | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\controllers\authControllers.js                     | JavaScript     |         73 |         21 |         19 |        113 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\helpers\auth.js                                    | JavaScript     |         17 |          3 |          4 |         24 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\helpers\checks.js                                  | JavaScript     |         42 |          7 |          8 |         57 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\helpers\encrypt.js                                 | JavaScript     |         15 |          0 |          3 |         18 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\models\user.js                                     | JavaScript     |         12 |          0 |          4 |         16 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\routes\authRoutes.js                               | JavaScript     |         15 |          6 |          7 |         28 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\backend\server.js                                          | JavaScript     |         20 |          5 |          6 |         31 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\public\vite.svg                                   | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\App.jsx                                       | JavaScript JSX |         18 |          0 |          4 |         22 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\assets\MoonPhase.svg                          | XML            |         16 |          0 |          1 |         17 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\assets\deposit.svg                            | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\assets\money.svg                              | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\assets\withdrawal.svg                         | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\HeaderBar.jsx                      | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\Input1.jsx                         | JavaScript JSX |         16 |          0 |          2 |         18 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\blurred-spheres.jsx                | JavaScript JSX |          6 |          0 |          1 |          7 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\button1.jsx                        | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\button2.jsx                        | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\footer.jsx                         | JavaScript JSX |         25 |          0 |          2 |         27 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\stats-module.jsx                   | JavaScript JSX |         16 |          0 |          2 |         18 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\HeaderBar.module.scss       | SCSS           |          5 |          0 |          1 |          6 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\blurred-spheres.module.scss | SCSS           |          7 |          0 |          0 |          7 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\button1.module.scss         | SCSS           |         25 |          0 |          2 |         27 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\button2.module.scss         | SCSS           |         16 |          0 |          0 |         16 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\dark-mode-switch.scss       | SCSS           |          0 |          0 |          1 |          1 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\footer.module.scss          | SCSS           |         47 |          0 |          3 |         50 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\input1.module.scss          | SCSS           |         28 |          0 |          1 |         29 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\components\styles\stats.module.scss           | SCSS           |         40 |          0 |          4 |         44 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\main.jsx                                      | JavaScript JSX |          9 |          0 |          2 |         11 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\pages\clientportal.jsx                        | JavaScript JSX |         36 |          0 |          2 |         38 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\pages\landingPage.jsx                         | JavaScript JSX |         47 |          9 |          8 |         64 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\pages\login.jsx                               | JavaScript JSX |         74 |         17 |          4 |         95 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\pages\template.jsx                            | JavaScript JSX |         12 |          0 |          2 |         14 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\styles\LandingPage.module.scss                | SCSS           |         72 |          3 |          5 |         80 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\styles\clientportal.module.scss               | SCSS           |         29 |          0 |          4 |         33 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\styles\index.scss                             | SCSS           |         20 |          0 |          4 |         24 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\styles\login.module.scss                      | SCSS           |         80 |          0 |         10 |         90 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\src\styles\template.module.scss                   | SCSS           |         23 |          0 |          3 |         26 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\fucktypescript\frontend\vite.config.js                                    | JavaScript     |          5 |          1 |          2 |          8 |
+| Total                                                                                                              |                |        918 |         72 |        130 |      1,120 |
++--------------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

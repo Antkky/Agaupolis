@@ -1,8 +1,8 @@
 {
     "files.exclude": {
-        "**/.git": true,
-        "**/.gitignore": true,
-        "**/.gitattributes": true,
+        "**/.git": false,
+        "**/.gitignore": false,
+        "**/.gitattributes": false,
         "**/.svn": true,
 
         "**/.env": true,

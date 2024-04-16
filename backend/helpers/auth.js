@@ -1,10 +1,17 @@
 import jwt from "jsonwebtoken";
 import "dotenv/config";
 
-export function authJWT(user) {
+export function authJWT(id, firstName, lastName, email) {
     // create a token and sign it to a variable
-    const userJSON = JSON.stringify(user);
-    const token = jwt.sign(userJSON, process.env.JWTsecret);
+    const token = jwt.sign(
+        {
+            id,
+            firstName,
+            lastName,
+            email,
+        },
+        process.env.JWTsecret
+    );
 
     // returns generated token
     return token;
