@@ -44,7 +44,7 @@ export default function LandingPage() {
                     <Button2 text="Client Portal" />
                 </div>
 
-                {/* Start Background Spheres */}
+                {/* Start Background Spheres 
                 <div className={Page.SphereWrapper}>
                     <div className={Page.Sphere1}>
                         <Sphere />
@@ -53,7 +53,7 @@ export default function LandingPage() {
                         <Sphere />
                     </div>
                 </div>
-                {/* End Background Spheres */}
+                 End Background Spheres */}
             </div>
             <div className={Page.Footer_Wrapper}>
                 <Footer />

@@ -5,8 +5,10 @@ import LoginPage from "./pages/login.jsx";
 import ClientPortal from "./pages/clientportal.jsx";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8000";
-axios.defaults.withCredentials = true;
+const api = axios.create({
+    baseURL: "http://localhost:8000/api",
+    withCredentials: true,
+});
 
 export default function App() {
     return (

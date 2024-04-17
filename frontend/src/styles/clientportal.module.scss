@@ -2,18 +2,28 @@
     border: 1px red solid;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #8339e8;
+}
+
 .Content {
-    min-width: 80%;
+    max-width: 80vw;
     padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .Welcome {
-    @include outline;
     left: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5vh;
+    margin-bottom: 2.5vh;
     .WelcomeText {
         display: flex;
         h1 {
@@ -33,10 +43,28 @@
 }
 
 .Stats {
-    @include outline;
+    margin: 2.5vh 0px 5vh;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0px 5vw;
     flex-wrap: wrap;
+}
+
+.EquityChart {
+    margin-top: 5vh;
+    display: flex;
+    height: 30vh;
+    max-width: 100%;
+    padding: 0px;
+}
+
+.History {
+    margin: 2.5vh 0px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.Footer {
+    margin-bottom: 50px;
 }

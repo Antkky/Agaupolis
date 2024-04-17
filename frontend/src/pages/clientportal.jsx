@@ -4,9 +4,11 @@ import deposit from "../assets/deposit.svg";
 import money from "../assets/money.svg";
 import withdrawal from "../assets/withdrawal.svg";
 import Template from "./template";
+import EquityChart from "../components/EquityChart";
+import Account_history from "../components/account-history";
+import Footer from "../components/footer";
 
 export default function ClientPortal() {
-    const firstName = "Anthony";
     return (
         <Template>
             <div className={page.Content}>
@@ -17,6 +19,7 @@ export default function ClientPortal() {
                     </div>
                     <h1 className={page.missed}>Here's what you missed.</h1>
                 </section>
+                <hr className={page.rounded} />
                 <section className={page.Stats}>
                     <StatsModule
                         amount="25,000$"
@@ -30,9 +33,18 @@ export default function ClientPortal() {
                     />
                     <StatsModule
                         amount="5,000$"
-                        label="total deposit"
+                        label="total withdrawals"
                         image={withdrawal}
                     />
+                </section>
+                <section className={page.EquityChart}>
+                    <EquityChart />
+                </section>
+                <section className={page.History}>
+                    <Account_history />
+                </section>
+                <section className={page.Footer}>
+                    <Footer />
                 </section>
             </div>
         </Template>

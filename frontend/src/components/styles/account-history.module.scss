@@ -1,0 +1,19 @@
+.content {
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    .item {
+        border: 1px solid red;
+        border-radius: 10px;
+        height: 250px;
+        min-width: 200px;
+        margin: 0px 20px;
+        text-align: center;
+        align-items: center;
+    }
+    &::-webkit-scrollbar {
+        background-color: transparent;
+    }
+}
