@@ -1,47 +1,27 @@
 import Login from "../styles/login.module.scss";
 import key from "../assets/Key.png";
 import Input1 from "../components/Input1";
-import { useNavigate } from "react-router-dom";
-import { useState } from "react";
-import axios from "axios";
 import Template from "./template";
+import { useState, useEffect } from "react";
 
 export default function LoginPage() {
-    const navigate = useNavigate();
+    // Get the user's input
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
 
-    // gets input data and assigns to "data" object
-    const [data, setData] = useState({
-        email: "",
-        password: "",
-    });
-    // login function
-    async function loginUser(e) {
-        // prevents page from reloading
+    // Send a POST request to the API server with the user's input
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // assigns input to data variable
-        const { email, password } = data;
         try {
-            // post request and assign response to data object
-            const { data } = await axios.post("/api/login", {
-                email,
+            const response = await axios.post("/login", {
+                username,
                 password,
             });
-            // check for errors
-            if (data.error) {
-                // log errors
-                console.error(data.error);
-            }
-            // if server status = logged in
-            if (data.status == "Logged In") {
-                // store token in localstorage
-                localStorage.setItem("token", data.token);
-                // navigate to client portal with new token
-                navigate("/clientportal", { replace: true });
-            }
+            console.log(response);
         } catch (error) {
-            console.error(error);
+            console.log(error);
         }
-    }
+    };
 
     return (
         <Template>
@@ -53,34 +33,14 @@ export default function LoginPage() {
                 </div>
                 {/* Authenticate Text */}
                 <h1>Authenticate</h1>
-                <form className={Login.Form} onSubmit={loginUser}>
+                <form className={Login.Form}>
                     {/* Username Input */}
                     <div className={Login.Input}>
-                        <Input1
-                            name="Email"
-                            type="text"
-                            value={data.email}
-                            onChange={(e) =>
-                                setData({
-                                    ...data,
-                                    email: e.target.value,
-                                })
-                            }
-                        />
+                        <Input1 name="Email" type="text" />
                     </div>
                     {/* Password Input */}
                     <div className={Login.Input}>
-                        <Input1
-                            name="Password"
-                            type="password"
-                            value={data.password}
-                            onChange={(e) =>
-                                setData({
-                                    ...data,
-                                    password: e.target.value,
-                                })
-                            }
-                        />
+                        <Input1 name="Password" type="password" />
                     </div>
                     {/* Submit Button */}
                     <button className={Login.Button}>

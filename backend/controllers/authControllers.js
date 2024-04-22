@@ -4,7 +4,7 @@ import { comparePassword } from "../helpers/encrypt.js";
 import { EncryptPWD } from "../helpers/encrypt.js";
 import { authJWT, decodeJWT } from "../helpers/auth.js";
 
-export function test(res) {
+export function test(req, res) {
     return res.json({
         status: "server is working correctly",
     });
@@ -62,12 +62,7 @@ export async function loginUser(req, res) {
             });
 
         // generate JWT token
-        const token = authJWT(
-            user._id,
-            user.firstName,
-            user.lastName,
-            user.email
-        );
+        const token = authJWT(user._id);
 
         // return status
         return res.json({
@@ -77,36 +72,5 @@ export async function loginUser(req, res) {
         //
     } catch (error) {
         console.error(error);
-    }
-}
-
-// get user data using jwt token
-export async function userData(req, res) {
-    try {
-        // get JWT token from request header
-        const token = req.headers["token"];
-
-        // decode JWT token
-        const decoded = decodeJWT(token);
-
-        // find user by ID
-        const user = await UserModel.findById(decoded.id);
-
-        // checks if user exists
-        if (!user) {
-            return res.json({
-                error: "invalid user",
-            });
-        }
-
-        // returns user data
-        return res.json(decoded);
-
-        //
-    } catch (error) {
-        console.log(error);
-        res.json({
-            error: "invalid token",
-        });
     }
 }
