@@ -48,15 +48,6 @@ export default function Account_history() {
             <div className={history.item}>
                 <h1>Work in Progress</h1>
             </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
         </div>
     );
 }

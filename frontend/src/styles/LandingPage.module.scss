@@ -10,6 +10,7 @@ body {
     align-items: center;
     padding-top: 7vh;
     background-color: white;
+    z-index: 2;
     .Title {
         font-size: 7vw;
         opacity: 0.7;
@@ -36,9 +37,11 @@ body {
     .LearnMore {
         margin-top: 12vh;
         width: 20%;
+        z-index: 2;
     }
     .ClientButton {
         margin-top: 3vh;
+        z-index: 2;
     }
 
     .Switch {
@@ -54,7 +57,7 @@ body {
         /*
         animation: rotate 10s linear 0s infinite forwards;
         */
-        z-index: -1;
+        z-index: 1;
     }
     .Sphere1 {
         position: absolute;

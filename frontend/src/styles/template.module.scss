@@ -1,15 +1,28 @@
-.Wrapper {
-    width: 100vw;
-    min-height: fit-content;
+body {
+    min-height: 100vh;
+}
+
+.Background {
     display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #8339e8;
 }
 
 .Content {
     background-color: white;
-    min-height: 100%;
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    max-width: 100%;
     margin: 0px 10px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.FooterWrapper {
+    width: 100%;
+    align-self: flex-end;
 }
