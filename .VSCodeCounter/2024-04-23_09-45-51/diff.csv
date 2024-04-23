@@ -1,0 +1,24 @@
+"filename", "language", "JavaScript", "SCSS", "JavaScript JSX", "XML", "comment", "blank", "total"
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\controllers\authControllers.js", "JavaScript", -23, 0, 0, 0, -7, -6, -36
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\controllers\userController.js", "JavaScript", 20, 0, 0, 0, 1, 3, 24
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\helpers\auth.js", "JavaScript", -7, 0, 0, 0, 1, 0, -6
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\routes\authRoutes.js", "JavaScript", 1, 0, 0, 0, 0, 0, 1
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\App.jsx", "JavaScript JSX", 0, 0, 2, 0, 0, -2, 0
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\Menu.svg", "XML", 0, 0, 0, 9, 0, 1, 10
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\bell.svg", "XML", 0, 0, 0, 9, 0, 1, 10
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\pfp.svg", "XML", 0, 0, 0, 9, 0, 1, 10
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\HeaderBar.jsx", "JavaScript JSX", 0, 0, 16, 0, 0, 0, 16
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\account-history.jsx", "JavaScript JSX", 0, 0, -9, 0, 0, 0, -9
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\HeaderBar.module.scss", "SCSS", 0, 54, 0, 0, 0, 3, 57
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\footer.module.scss", "SCSS", 0, 10, 0, 0, 0, 0, 10
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\clientportal.jsx", "JavaScript JSX", 0, 0, -10, 0, 0, 0, -10
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\landingPage.jsx", "JavaScript JSX", 0, 0, 8, 0, -10, 0, -2
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\login.jsx", "JavaScript JSX", 0, 0, -32, 0, -8, 0, -40
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\template.jsx", "JavaScript JSX", 0, 0, -1, 0, 0, 0, -1
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\LandingPage.module copy.scss", "SCSS", 0, -69, 0, 0, -3, -4, -76
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\LandingPage.module.scss", "SCSS", 0, 7, 0, 0, 0, 1, 8
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\clientportal.module.scss", "SCSS", 0, -10, 0, 0, 0, -3, -13
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\index.scss", "SCSS", 0, 6, 0, 0, 0, 2, 8
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\login.module.scss", "SCSS", 0, -4, 0, 0, 0, -1, -5
+"c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\template.module.scss", "SCSS", 0, 11, 0, 0, 0, 2, 13
+"Total", "-", -9, 5, -26, 27, -26, -2, -31

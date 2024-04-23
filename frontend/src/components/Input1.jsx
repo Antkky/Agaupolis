@@ -1,4 +1,3 @@
-import { ChangeEventHandler } from "react";
 import input from "./styles/input1.module.scss";
 
 export default function Input1(props) {
@@ -10,7 +9,7 @@ export default function Input1(props) {
                 name={props.name}
                 id={props.name}
                 value={props.value}
-                onChange={props.onChange}
+                onChange={props.change}
             />
         </div>
     );
