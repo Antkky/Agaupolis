@@ -17,7 +17,7 @@ export default function ClientPortal() {
                     <section className={page.Welcome}>
                         <div className={page.WelcomeText}>
                             <h1>Welcome Back,</h1>
-                            <h1 className={page.name}></h1>
+                            <h1 className={page.name}>Anthony</h1>
                         </div>
                         <h1 className={page.missed}>Here's what you missed.</h1>
                     </section>
