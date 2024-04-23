@@ -5,7 +5,7 @@
         "**/.gitattributes": true,
         "**/.svn": true,
 
-        "**/.env": true,
+        "**/.env": false,
 
         "**/.hg": true,
         "**/CVS": true,

@@ -8,49 +8,89 @@ import EquityChart from "../components/EquityChart";
 import Account_history from "../components/account-history";
 import Footer from "../components/footer";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"; // remove for production
+import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+import toast from "react-hot-toast";
+import { useEffect } from "react";
 
 export default function ClientPortal() {
-    return (
-        <>
-            <Template>
-                <div className={page.Content}>
-                    <section className={page.Welcome}>
-                        <div className={page.WelcomeText}>
-                            <h1>Welcome Back,</h1>
-                            <h1 className={page.name}>Anthony</h1>
-                        </div>
-                        <h1 className={page.missed}>Here's what you missed.</h1>
-                    </section>
-                    <hr className={page.rounded} />
-                    <section className={page.Stats}>
-                        <StatsModule
-                            amount="25,000$"
-                            label="total deposit"
-                            image={deposit}
-                        />
-                        <StatsModule
-                            amount="5,000$"
-                            label="net profit"
-                            image={money}
-                        />
-                        <StatsModule
-                            amount="5,000$"
-                            label="total withdrawals"
-                            image={withdrawal}
-                        />
-                    </section>
-                    <section className={page.EquityChart}>
-                        <EquityChart />
-                    </section>
-                    <section className={page.History}>
-                        <Account_history />
-                    </section>
-                    <section className={page.Footer}>
-                        <Footer />
-                    </section>
-                </div>
-            </Template>
-            <ReactQueryDevtools /> {/* remove for prduction */}
-        </>
-    );
+    const navigate = useNavigate();
+    const [cookies, setCookie] = useCookies(["name"]);
+
+    useEffect(() => {
+        if (!cookies.JWT) {
+            navigate("/login", { replace: true });
+        }
+    });
+
+    const { data, status } = useQuery({
+        queryKey: ["user"],
+        queryFn: async () => {
+            const response = await axios({
+                method: "get",
+                url: "/userData",
+                headers: {
+                    Authorization: "Bearer " + cookies.JWT,
+                },
+            });
+            return response.data;
+        },
+        staleTime: 1000 * 60,
+    });
+
+    if (status === "pending") {
+        return (
+            <>
+                <h1>Loading</h1>
+            </>
+        );
+    }
+    if (status === "success")
+        return (
+            <>
+                <Template>
+                    <div className={page.Content}>
+                        <section className={page.Welcome}>
+                            <div className={page.WelcomeText}>
+                                <h1>Welcome Back,</h1>
+                                <h1 className={page.name}>{data.firstName}</h1>
+                            </div>
+                            <h1 className={page.missed}>
+                                Here's what you missed.
+                            </h1>
+                        </section>
+                        <hr className={page.rounded} />
+                        <section className={page.Stats}>
+                            <StatsModule
+                                amount={data.totalDeposits}
+                                label="total deposit"
+                                image={deposit}
+                            />
+                            <StatsModule
+                                amount={data.netProfit}
+                                label="net profit"
+                                image={money}
+                            />
+                            <StatsModule
+                                amount={data.totalWithdrawals}
+                                label="total withdrawals"
+                                image={withdrawal}
+                            />
+                        </section>
+                        <section className={page.EquityChart}>
+                            <EquityChart />
+                        </section>
+                        <section className={page.History}>
+                            <Account_history />
+                        </section>
+                        <section className={page.Footer}>
+                            <Footer />
+                        </section>
+                    </div>
+                </Template>
+                <ReactQueryDevtools /> {/* remove for prduction */}
+            </>
+        );
 }

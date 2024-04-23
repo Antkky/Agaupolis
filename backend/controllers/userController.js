@@ -1,5 +1,5 @@
 import UserModel from "../models/user.js";
-import { authJWT, decodeJWT } from "../helpers/auth.js";
+import { decodeJWT } from "../helpers/auth.js";
 
 // get user data using jwt token
 export async function userData(req, res) {
@@ -7,7 +7,9 @@ export async function userData(req, res) {
         const authHeader = req.headers["authorization"];
         if (!authHeader) {
             res.sendStatus(403);
+            console.log("no auth header");
         }
+
         const split = authHeader.split(" ");
         const token = split[1];
         const decoded = decodeJWT(token);

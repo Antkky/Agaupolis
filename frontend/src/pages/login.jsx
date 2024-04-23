@@ -65,7 +65,7 @@ export default function LoginPage() {
                         />
                     </div>
                     {/* Submit Button */}
-                    <button className={Login.Button} type="submit">
+                    <button className={Login.Button} type="submit" style={{}}>
                         <p>Submit</p>
                     </button>
                     {/* End of Elements */}

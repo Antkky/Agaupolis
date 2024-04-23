@@ -2,7 +2,7 @@ import UserModel from "../models/user.js";
 import { registerChecks } from "../helpers/checks.js";
 import { comparePassword } from "../helpers/encrypt.js";
 import { EncryptPWD } from "../helpers/encrypt.js";
-import { authJWT, decodeJWT } from "../helpers/auth.js";
+import { authJWT } from "../helpers/auth.js";
 
 export function test(req, res) {
     return res.json({
@@ -14,20 +14,24 @@ export function test(req, res) {
 export async function registerUser(req, res) {
     try {
         // parse request body
-        const { firstName, lastName, email, password } = req.body;
+        const { admin, firstName, lastName, email, password } = req.body;
 
         // run checks on inputs
-        registerChecks(firstName, lastName, email, password);
+        registerChecks(admin, firstName, lastName, email, password);
 
         // encrypt password
         const encyptedPWD = await EncryptPWD(password);
 
         // create user in database
         await UserModel.create({
+            admin,
             firstName,
             lastName,
             email,
             password: encyptedPWD,
+            totalWithdrawals: 0,
+            totalDeposits: 0,
+            netProfit: 0,
         });
 
         // return status
