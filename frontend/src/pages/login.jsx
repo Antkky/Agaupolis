@@ -28,7 +28,7 @@ export default function LoginPage() {
             if (data.status == "Logged In" && data.token) {
                 toast.success(data.status);
                 setCookie("JWT", data.token);
-                navigate("/clientPortal", { replace: true });
+                navigate("/dashboard", { replace: true });
             }
         } catch (error) {
             console.error(error);

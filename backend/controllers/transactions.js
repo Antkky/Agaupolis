@@ -42,3 +42,35 @@ export async function newTransaction(req, res) {
         });
     }
 }
+
+export async function getTransactions(req, res) {
+    const authHeader = req.headers["authorization"];
+    // check if there is an auth header
+    if (!authHeader) {
+        res.sendStatus(403);
+        console.log("no auth header");
+    }
+    try {
+        // decode header
+        const decoded = decodeJWT(parseAuth(authHeader));
+        // find user using JWT token
+        const user = await UserModel.findById(decoded);
+        // checks if user exists
+        if (!user) {
+            res.json({
+                error: "user not found",
+            });
+        }
+        // find all transactions with matching accountID
+        const transactions = await TransactionModel.find({
+            accountID: user.id,
+        });
+        // returns transactions
+        res.json(transactions);
+    } catch (error) {
+        console.log(error);
+        res.json({
+            error: error,
+        });
+    }
+}

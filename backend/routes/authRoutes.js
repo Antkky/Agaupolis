@@ -24,6 +24,7 @@ router.post("/api/transactions", trans.newTransaction);
 
 // GET endpoints
 router.get("/api/userData", user.userData);
+router.get("/api/transactions", trans.getTransactions);
 
 //exports routes
 export default router;
