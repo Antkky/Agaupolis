@@ -10,6 +10,7 @@ const User = new mongoose.Schema(
         totalWithdrawals: { type: Number },
         totalDeposits: { type: Number },
         netProfit: { type: Number },
+        currentEquity: { type: Number },
     },
     { collection: "users" }
 );

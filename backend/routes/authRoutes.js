@@ -2,8 +2,9 @@ import express from "express";
 import cors from "cors";
 
 // imports all functions under the name c
-import * as auth from "../controllers/authControllers.js";
-import * as user from "../controllers/userController.js";
+import * as auth from "../controllers/auth.js";
+import * as user from "../controllers/user.js";
+import * as trans from "../controllers/transactions.js";
 
 // define router
 const router = express.Router();
@@ -19,9 +20,9 @@ router.use(
 // POST endpoints
 router.post("/api/register", auth.registerUser);
 router.post("/api/login", auth.loginUser);
+router.post("/api/transactions", trans.newTransaction);
 
 // GET endpoints
-router.get("/", auth.test);
 router.get("/api/userData", user.userData);
 
 //exports routes

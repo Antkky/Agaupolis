@@ -4,12 +4,6 @@ import { comparePassword } from "../helpers/encrypt.js";
 import { EncryptPWD } from "../helpers/encrypt.js";
 import { authJWT } from "../helpers/auth.js";
 
-export function test(req, res) {
-    return res.json({
-        status: "server is working correctly",
-    });
-}
-
 // register new user
 export async function registerUser(req, res) {
     try {

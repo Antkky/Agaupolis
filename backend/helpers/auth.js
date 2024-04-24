@@ -15,3 +15,8 @@ export function decodeJWT(token) {
     // verifies and returns token
     return jwt.verify(token, process.env.JWTsecret);
 }
+
+export function parseAuth(header) {
+    const split = header.split(" ");
+    return split[1];
+}
