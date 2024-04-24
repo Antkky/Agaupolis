@@ -25,7 +25,7 @@ export default function ClientPortal() {
         }
     });
 
-    const { data, status } = useQuery({
+    const { data, status, error } = useQuery({
         queryKey: ["user"],
         queryFn: async () => {
             const response = await axios({

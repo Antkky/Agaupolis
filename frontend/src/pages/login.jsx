@@ -1,5 +1,5 @@
 import Login from "../styles/login.module.scss";
-import key from "../assets/Key.png";
+import key from "../assets/Key.svg";
 import Input1 from "../components/Input1";
 import Template from "./template";
 import { useState } from "react";
