@@ -5,7 +5,7 @@ import bell from "../assets/bell.svg";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import "./styles/buttonStyle.scss";
-
+import SideMenu from "./menu";
 export default function HeaderBar() {
     const navigate = useNavigate();
     function deposit() {
@@ -28,28 +28,34 @@ export default function HeaderBar() {
             document.getElementById("withdrawalButton").classList.add("Active");
         }
     });
+
+    function OpenMenu() {
+        alert("menu opened");
+    }
     return (
-        <div className={Header.Wrapper}>
-            <div className={Header.LeftElements}>
-                <img src={Menu} />
+        <>
+            <div className={Header.Wrapper}>
+                <div className={Header.LeftElements}>
+                    <img src={Menu} onClick={OpenMenu} />
+                </div>
+                <div className="NavButtons">
+                    <ul>
+                        <li onClick={deposit} id="depositButton">
+                            Deposit
+                        </li>
+                        <li onClick={dashboard} id="dashboardButton">
+                            Dashboard
+                        </li>
+                        <li onClick={withdrawal} id="withdrawalButton">
+                            Withdrawal
+                        </li>
+                    </ul>
+                </div>
+                <div className={Header.RightElements}>
+                    <img src={pfp} />
+                    <img src={bell} />
+                </div>
             </div>
-            <div className="NavButtons">
-                <ul>
-                    <li onClick={deposit} id="depositButton">
-                        Deposit
-                    </li>
-                    <li onClick={dashboard} id="dashboardButton">
-                        Dashboard
-                    </li>
-                    <li onClick={withdrawal} id="withdrawalButton">
-                        Withdrawal
-                    </li>
-                </ul>
-            </div>
-            <div className={Header.RightElements}>
-                <img src={pfp} />
-                <img src={bell} />
-            </div>
-        </div>
+        </>
     );
 }

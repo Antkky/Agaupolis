@@ -70,7 +70,7 @@ export default function ClientPortal() {
                             />
                             <StatsModule
                                 amount={data.netProfit}
-                                label="net profit"
+                                label="Current Equity"
                                 image={money}
                             />
                             <StatsModule
@@ -79,9 +79,13 @@ export default function ClientPortal() {
                                 image={withdrawal}
                             />
                         </section>
+                        <h1 className={page.sectionHeaders}>Account Equity</h1>
                         <section className={page.EquityChart}>
                             <EquityChart />
                         </section>
+                        <h1 className={page.sectionHeaders}>
+                            Transaction History
+                        </h1>
                         <section className={page.History}>
                             <Account_history />
                         </section>

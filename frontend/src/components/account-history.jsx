@@ -2,52 +2,58 @@ import React, { useRef } from "react";
 import history from "./styles/account-history.module.scss";
 
 export default function Account_history() {
-    const containerRef = useRef(null);
-
-    const smoothScroll = (targetScroll) => {
-        const scrollStep =
-            Math.abs(containerRef.current.scrollLeft - targetScroll) / 10; // Adjust smoothness
-        if (containerRef.current.scrollLeft !== targetScroll) {
-            if (containerRef.current.scrollLeft < targetScroll) {
-                containerRef.current.scrollLeft += scrollStep;
-            } else {
-                containerRef.current.scrollLeft -= scrollStep;
-            }
-            requestAnimationFrame(() => smoothScroll(targetScroll));
-        }
-    };
-
-    const handleWheel = (e) => {
-        e.preventDefault();
-        const delta = Math.sign(e.deltaY); // Get the direction of the scroll
-        const targetScroll = containerRef.current.scrollLeft + delta * 400; // Adjust scroll speed
-        smoothScroll(targetScroll);
-    };
+    const transactions = [
+        {
+            _id: "66295c3e913e0c0cea6bae8f",
+            accountID: "66295be2913e0c0cea6bae84",
+            Type: "withdrawal",
+            Amount: 5825,
+            Method: "ethereum",
+            Confirmed: false,
+            __v: 0,
+        },
+        {
+            _id: "66295c29913e0c0cea6bae89",
+            accountID: "66295be2913e0c0cea6bae84",
+            Type: "deposit",
+            Amount: 5814,
+            Method: "wire-transfer",
+            Confirmed: false,
+            __v: 0,
+        },
+        {
+            _id: "66295c2f913e0c0cea6bae8c",
+            accountID: "66295be2913e0c0cea6bae84",
+            Type: "deposit",
+            Amount: 4565,
+            Method: "wire-transfer",
+            Confirmed: false,
+            __v: 0,
+        },
+    ];
 
     return (
-        <div
-            className={history.content}
-            ref={containerRef}
-            onWheel={handleWheel}
-        >
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
-            <div className={history.item}>
-                <h1>Work in Progress</h1>
-            </div>
+        <div className={history.content}>
+            {transactions.map((transactions) => {
+                return (
+                    <div className={history.item}>
+                        <label className={history.type}>
+                            {transactions.Type}
+                        </label>
+                        <label className={history.method}>
+                            {transactions.Method}
+                        </label>
+                        <div className={history.amountWrapper}>
+                            <label>
+                                {transactions.Amount.toLocaleString()}$
+                            </label>
+                        </div>
+                        <div className={history.dateWrapper}>
+                            <label>today</label>
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     );
 }

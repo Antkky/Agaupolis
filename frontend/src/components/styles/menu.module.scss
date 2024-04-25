@@ -1,0 +1,16 @@
+.Background {
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1vh);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.Wrapper {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    width: 400px;
+    height: 100vh;
+}

@@ -1,0 +1,96 @@
+Date : 2024-04-24 15:03:40
+Directory : c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis
+Total : 52 files,  1493 codes, 84 comments, 163 blanks, all 1740 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JavaScript JSX |         17 |        578 |         29 |         51 |        658 |
+| SCSS           |         15 |        562 |          3 |         46 |        611 |
+| JavaScript     |         11 |        273 |         52 |         58 |        383 |
+| XML            |          9 |         80 |          0 |          8 |         88 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                          | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                             |         52 |      1,493 |         84 |        163 |      1,740 |
+| backend                                                                                                       |         10 |        268 |         51 |         56 |        375 |
+| backend (Files)                                                                                               |          1 |         20 |          5 |          6 |         31 |
+| backend\controllers                                                                                           |          3 |        128 |         29 |         19 |        176 |
+| backend\helpers                                                                                               |          3 |         71 |         11 |         16 |         98 |
+| backend\models                                                                                                |          2 |         31 |          0 |          8 |         39 |
+| backend\routes                                                                                                |          1 |         18 |          6 |          7 |         31 |
+| frontend                                                                                                      |         42 |      1,225 |         33 |        107 |      1,365 |
+| frontend (Files)                                                                                              |          1 |          5 |          1 |          2 |          8 |
+| frontend\public                                                                                               |          1 |          1 |          0 |          0 |          1 |
+| frontend\src                                                                                                  |         40 |      1,219 |         32 |        105 |      1,356 |
+| frontend\src (Files)                                                                                          |          2 |         40 |          0 |          6 |         46 |
+| frontend\src\assets                                                                                           |          8 |         79 |          0 |          8 |         87 |
+| frontend\src\components                                                                                       |         19 |        560 |          0 |         38 |        598 |
+| frontend\src\components (Files)                                                                               |          9 |        267 |          0 |         22 |        289 |
+| frontend\src\components\styles                                                                                |         10 |        293 |          0 |         16 |        309 |
+| frontend\src\pages                                                                                            |          6 |        271 |         29 |         23 |        323 |
+| frontend\src\styles                                                                                           |          5 |        269 |          3 |         30 |        302 |
++---------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                                      | language       | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\controllers\auth.js                                | JavaScript     |         49 |         14 |         12 |         75 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\controllers\transactions.js                        | JavaScript     |         60 |         14 |          3 |         77 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\controllers\user.js                                | JavaScript     |         19 |          1 |          4 |         24 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\helpers\auth.js                                    | JavaScript     |         14 |          4 |          5 |         23 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\helpers\checks.js                                  | JavaScript     |         42 |          7 |          8 |         57 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\helpers\encrypt.js                                 | JavaScript     |         15 |          0 |          3 |         18 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\models\transaction.js                              | JavaScript     |         14 |          0 |          4 |         18 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\models\user.js                                     | JavaScript     |         17 |          0 |          4 |         21 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\routes\authRoutes.js                               | JavaScript     |         18 |          6 |          7 |         31 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\backend\server.js                                          | JavaScript     |         20 |          5 |          6 |         31 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\public\vite.svg                                   | XML            |          1 |          0 |          0 |          1 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\App.jsx                                       | JavaScript JSX |         19 |          0 |          4 |         23 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\Key.svg                                | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\Menu.svg                               | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\MoonPhase.svg                          | XML            |         16 |          0 |          1 |         17 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\bell.svg                               | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\deposit.svg                            | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\money.svg                              | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\pfp.svg                                | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\assets\withdrawal.svg                         | XML            |          9 |          0 |          1 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\EquityChart.jsx                    | JavaScript JSX |         78 |          0 |          6 |         84 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\HeaderBar.jsx                      | JavaScript JSX |         54 |          0 |          2 |         56 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\Input1.jsx                         | JavaScript JSX |         15 |          0 |          2 |         17 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\account-history.jsx                | JavaScript JSX |         57 |          0 |          3 |         60 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\blurred-spheres.jsx                | JavaScript JSX |          6 |          0 |          1 |          7 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\button1.jsx                        | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\button2.jsx                        | JavaScript JSX |          8 |          0 |          2 |         10 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\footer.jsx                         | JavaScript JSX |         25 |          0 |          2 |         27 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\stats-module.jsx                   | JavaScript JSX |         16 |          0 |          2 |         18 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\HeaderBar.module.scss       | SCSS           |         30 |          0 |          3 |         33 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\account-history.module.scss | SCSS           |         58 |          0 |          1 |         59 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\blurred-spheres.module.scss | SCSS           |          7 |          0 |          0 |          7 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\button1.module.scss         | SCSS           |         25 |          0 |          2 |         27 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\button2.module.scss         | SCSS           |         16 |          0 |          0 |         16 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\buttonStyle.scss            | SCSS           |         30 |          0 |          1 |         31 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\dark-mode-switch.scss       | SCSS           |          0 |          0 |          1 |          1 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\footer.module.scss          | SCSS           |         59 |          0 |          3 |         62 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\input1.module.scss          | SCSS           |         28 |          0 |          1 |         29 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\components\styles\stats.module.scss           | SCSS           |         40 |          0 |          4 |         44 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\main.jsx                                      | JavaScript JSX |         21 |          0 |          2 |         23 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\clientportal.jsx                        | JavaScript JSX |         94 |          0 |          5 |         99 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\deposit.jsx                             | JavaScript JSX |         27 |          7 |          2 |         36 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\landingPage.jsx                         | JavaScript JSX |         47 |          7 |          8 |         62 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\login.jsx                               | JavaScript JSX |         65 |          8 |          4 |         77 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\template.jsx                            | JavaScript JSX |         11 |          0 |          2 |         13 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\pages\withdrawal.jsx                          | JavaScript JSX |         27 |          7 |          2 |         36 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\LandingPage.module.scss                | SCSS           |         76 |          3 |          5 |         84 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\clientportal.module.scss               | SCSS           |         61 |          0 |          7 |         68 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\index.scss                             | SCSS           |         30 |          0 |          6 |         36 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\login.module.scss                      | SCSS           |         77 |          0 |          8 |         85 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\src\styles\template.module.scss                   | SCSS           |         25 |          0 |          4 |         29 |
+| c:\Users\Antik.DESKTOP-US90PRM\Documents\Agaupolis\frontend\vite.config.js                                    | JavaScript     |          5 |          1 |          2 |          8 |
+| Total                                                                                                         |                |      1,493 |         84 |        163 |      1,740 |
++---------------------------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
