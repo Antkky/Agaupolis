@@ -22,14 +22,10 @@ body {
     min-height: 100vh;
 }
 
-.Dark_Theme {
-    primary-color: #111522;
-    secondary-color: #8339e8;
-    font-color: White;
-}
+$Light-primary-color: white;
+$Light-secondary-color: #8339e8;
+$Light-contrast-color: black;
 
-.Light_Theme {
-    primary-color: white;
-    secondary-color: #8339e8;
-    font-color: rgb(0, 0, 0);
+* {
+    color: $Light-contrast-color;
 }

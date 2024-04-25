@@ -1,5 +1,6 @@
-.Sphere{
-    background-color: #8339E8;
+@use "../../styles/index.scss";
+.Sphere {
+    background-color: index.$Light-secondary-color;
     border-radius: 50%;
     width: 35vh;
     height: 35vh;

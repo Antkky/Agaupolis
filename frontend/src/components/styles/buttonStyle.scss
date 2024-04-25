@@ -28,3 +28,45 @@
         }
     }
 }
+
+.nav-opened {
+    position: fixed;
+    left: 0px;
+    z-index: 5;
+    transition: 500ms;
+}
+
+.nav-closed {
+    position: fixed;
+    left: -500px;
+    z-index: 5;
+    transition: 500ms;
+    animation: close 0.5s ease 0ms 1 forwards;
+}
+
+.background-opened {
+    position: fixed;
+    z-index: 4;
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1vh);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.background-closed {
+    position: fixed;
+    z-index: 4;
+    opacity: 0%;
+    animation: close 0.5s ease 0ms 1 forwards;
+}
+
+@keyframes close {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+        z-index: -5;
+    }
+}

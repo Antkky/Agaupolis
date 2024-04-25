@@ -1,3 +1,5 @@
+@use "../../styles/index.scss";
+
 .Background {
     position: fixed;
     z-index: 4;
@@ -5,12 +7,27 @@
     backdrop-filter: blur(1vh);
     min-width: 100vw;
     min-height: 100vh;
+    transition: all 0.5s ease;
 }
 .Wrapper {
     position: fixed;
     z-index: 5;
-    background-color: white;
+    background-color: index.$Light-primary-color;
+    box-shadow: 0px 0px 0px 3px index.$Light-secondary-color inset;
+    border-left: 0px;
     border-radius: 0px 20px 20px 0px;
-    width: 400px;
+    width: 20vw;
     height: 100vh;
+    transition: all 0.5s ease;
+    .Close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        scale: 1.5;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+        &:hover {
+            transform: translateY(3px);
+        }
+    }
 }

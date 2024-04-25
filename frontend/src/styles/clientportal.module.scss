@@ -1,3 +1,4 @@
+@use "../styles/index.scss";
 .Content {
     min-width: 80vw;
     padding-top: 8vh;
@@ -18,7 +19,7 @@
             opacity: 0.6;
         }
         .name {
-            color: #8339e8;
+            color: index.$Light-secondary-color;
             opacity: 1;
         }
     }

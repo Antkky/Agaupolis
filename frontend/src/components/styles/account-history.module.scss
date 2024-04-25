@@ -1,3 +1,5 @@
+@use "../../styles/index.scss";
+
 .content {
     max-width: 100%;
     overflow-y: hidden;
@@ -5,7 +7,7 @@
     display: flex;
     flex-wrap: nowrap;
     .item {
-        border: 2px solid #8339e8;
+        border: 2px solid index.$Light-secondary-color;
         border-radius: 20px;
         height: 250px;
         width: 200px;
@@ -20,7 +22,7 @@
             width: 100%;
             font-size: 1.9rem;
             font-weight: 500;
-            color: #8339e8;
+            color: index.$Light-secondary-color;
         }
         .method {
             font-size: 1.25rem;
