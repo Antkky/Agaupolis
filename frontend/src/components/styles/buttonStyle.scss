@@ -1,3 +1,5 @@
+@use "../../styles/index.scss";
+
 .NavButtons {
     position: absolute;
     left: 50%;
@@ -69,4 +71,8 @@
         opacity: 0%;
         z-index: -5;
     }
+}
+
+.NavActive {
+    color: index.$Light-secondary-color;
 }

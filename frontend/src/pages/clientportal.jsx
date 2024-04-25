@@ -18,7 +18,6 @@ import { useEffect } from "react";
 export default function ClientPortal() {
     const navigate = useNavigate();
     const [cookies, setCookie] = useCookies(["name"]);
-
     useEffect(() => {
         if (!cookies.JWT) {
             navigate("/login", { replace: true });
@@ -40,14 +39,7 @@ export default function ClientPortal() {
         staleTime: 1000 * 60,
     });
 
-    if (status === "pending") {
-        return (
-            <>
-                <h1>Loading</h1>
-            </>
-        );
-    }
-    if (status === "success")
+    if (status === "success") {
         return (
             <>
                 <Template>
@@ -97,4 +89,5 @@ export default function ClientPortal() {
                 <ReactQueryDevtools /> {/* remove for prduction */}
             </>
         );
+    }
 }

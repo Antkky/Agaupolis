@@ -7,7 +7,7 @@ export default function Account_history() {
             _id: "66295c3e913e0c0cea6bae8f",
             accountID: "66295be2913e0c0cea6bae84",
             Type: "withdrawal",
-            Amount: 5825,
+            Amount: 5000,
             Method: "ethereum",
             Confirmed: false,
             __v: 0,
@@ -16,16 +16,7 @@ export default function Account_history() {
             _id: "66295c29913e0c0cea6bae89",
             accountID: "66295be2913e0c0cea6bae84",
             Type: "deposit",
-            Amount: 5814,
-            Method: "wire-transfer",
-            Confirmed: false,
-            __v: 0,
-        },
-        {
-            _id: "66295c2f913e0c0cea6bae8c",
-            accountID: "66295be2913e0c0cea6bae84",
-            Type: "deposit",
-            Amount: 4565,
+            Amount: 5000,
             Method: "wire-transfer",
             Confirmed: false,
             __v: 0,
@@ -49,7 +40,7 @@ export default function Account_history() {
                             </label>
                         </div>
                         <div className={history.dateWrapper}>
-                            <label>today</label>
+                            <label>yesterday</label>
                         </div>
                     </div>
                 );

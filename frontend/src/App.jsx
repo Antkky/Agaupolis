@@ -6,6 +6,7 @@ import ClientPortal from "./pages/clientportal.jsx";
 import Deposit from "./pages/deposit.jsx";
 import Withdrawal from "./pages/withdrawal.jsx";
 import axios from "axios";
+import Template from "./pages/template.jsx";
 
 axios.defaults.baseURL = "http://localhost:8000/api";
 
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/Dashboard" element={<ClientPortal />} />
             <Route path="/Deposit" element={<Deposit />} />
             <Route path="/Withdrawal" element={<Withdrawal />} />
+            <Route path="/Research" element={<Template />} />
         </Routes>
     );
 }

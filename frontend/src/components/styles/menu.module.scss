@@ -19,6 +19,9 @@
     width: 20vw;
     height: 100vh;
     transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .Close {
         position: absolute;
         top: 20px;
@@ -29,5 +32,47 @@
         &:hover {
             transform: translateY(3px);
         }
+    }
+    .pfp {
+        border-radius: 50%;
+        $diameter: 130px;
+        width: $diameter;
+        height: $diameter;
+        margin-top: 8vh;
+    }
+    .Name {
+        font-size: 2.2em;
+        font-weight: 500;
+        opacity: 0.7;
+        margin-top: 0.3em;
+        color: index.$Light-contrast-color;
+    }
+    .role {
+        color: index.$Light-secondary-color;
+        font-weight: 500;
+        margin-bottom: 2vh;
+    }
+    .Nav1 {
+        width: 65%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        label {
+            font-size: 1.75em;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            opacity: 0.7;
+            &:hover {
+                color: index.$Light-secondary-color;
+            }
+        }
+    }
+    .Nav2 {
+        width: 65%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

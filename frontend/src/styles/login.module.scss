@@ -1,6 +1,8 @@
+@use "../styles/index.scss";
+
 .Background {
     min-height: 100vh;
-    background-color: #8339e8;
+    background-color: index.$Light-secondary-color;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
@@ -10,7 +12,7 @@
     width: 25vw;
     margin-top: 10vh;
     border-radius: 20px;
-    border: 2px #8339e8 solid;
+    border: 2px index.$Light-secondary-color solid;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +22,7 @@
 .Icon_Wrapper {
     margin-top: 40px;
     z-index: 1;
-    background-color: #8339e8;
+    background-color: index.$Light-secondary-color;
     padding: 10px;
     width: 50px;
     height: 50px;
@@ -52,7 +54,7 @@ h1 {
     margin: 50px 0px;
     width: 70%;
     border-radius: 15px;
-    border: 1px #8339e8 solid;
+    border: 2px index.$Light-secondary-color solid;
     background-color: white;
     text-align: center;
     cursor: pointer;
@@ -61,11 +63,11 @@ h1 {
         margin: 0px;
         font-size: 1.5vw;
         opacity: 0.7;
-        color: #000000;
+        color: index.$Light-secondary-color;
     }
     &:hover {
         transform: translateY(5px);
-        background-color: #8339e8;
+        background-color: index.$Light-secondary-color;
     }
 }
 

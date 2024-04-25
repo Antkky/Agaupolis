@@ -1,3 +1,5 @@
+@use "../styles/index.scss";
+
 body {
     background-color: white;
 }
@@ -29,7 +31,7 @@ body {
             opacity: 0.6;
         }
         .Confidence {
-            color: #8339e8;
+            color: index.$Light-secondary-color;
             margin-left: 7px;
             opacity: 1;
         }

@@ -8,20 +8,20 @@ import { authJWT } from "../helpers/auth.js";
 export async function registerUser(req, res) {
     try {
         // parse request body
-        const { admin, firstName, lastName, email, password } = req.body;
+        const { role, firstName, lastName, email, password } = req.body;
 
         // run checks on inputs
-        registerChecks(admin, firstName, lastName, email, password);
+        registerChecks(role, firstName, lastName, email, password);
 
         // encrypt password
         const encyptedPWD = await EncryptPWD(password);
 
         // create user in database
         await UserModel.create({
-            admin,
-            firstName,
-            lastName,
-            email,
+            role: role,
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
             password: encyptedPWD,
             totalWithdrawals: 0,
             totalDeposits: 0,

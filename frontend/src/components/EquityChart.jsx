@@ -69,7 +69,7 @@ export default function EquityChart() {
                 lineTension: 0.5,
                 fill: true,
                 pointRadius: 0,
-                backgroundColor: createGradient("#8339e8", "#8239e800"),
+                backgroundColor: createGradient("#E8B923", "#E8B92300"),
                 borderCapStyle: "round",
             },
         ],
